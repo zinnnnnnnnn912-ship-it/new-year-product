@@ -1,0 +1,165 @@
+{\rtf1\ansi\ansicpg950\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh14600\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8">\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+  <title>New Year, New Legends</title>\
+  <style>\
+    /* Global settings */\
+    * \{\
+      box-sizing: border-box;\
+      margin: 0;\
+      padding: 0;\
+      font-family: 'Arial', sans-serif;\
+    \}\
+\
+    body \{\
+      background: linear-gradient(to bottom, #8B0000, #0B0B3B);\
+      color: #fff;\
+      min-height: 100vh;\
+      padding: 20px;\
+    \}\
+\
+    header \{\
+      text-align: center;\
+      padding: 40px 20px;\
+    \}\
+\
+    header h1 \{\
+      font-size: 3rem;\
+      margin-bottom: 10px;\
+      color: #FFD700;\
+      text-shadow: 2px 2px #FF4500;\
+    \}\
+\
+    header p \{\
+      font-size: 1.2rem;\
+      color: #FFE4B5;\
+    \}\
+\
+    .episode \{\
+      background: rgba(0, 0, 0, 0.5);\
+      border-radius: 15px;\
+      padding: 20px;\
+      margin: 30px auto;\
+      max-width: 800px;\
+      box-shadow: 0 0 15px #FFD700;\
+    \}\
+\
+    .episode h2 \{\
+      color: #FF6347;\
+      margin-bottom: 10px;\
+      text-align: center;\
+    \}\
+\
+    .episode p \{\
+      margin-bottom: 15px;\
+      line-height: 1.6;\
+      color: #FFFACD;\
+    \}\
+\
+    .video-container \{\
+      position: relative;\
+      padding-bottom: 56.25%; /* 16:9 */\
+      padding-top: 25px;\
+      height: 0;\
+    \}\
+\
+    .video-container iframe \{\
+      position: absolute;\
+      top: 0;\
+      left: 0;\
+      width: 100%;\
+      height: 100%;\
+      border: none;\
+      border-radius: 10px;\
+    \}\
+\
+    footer \{\
+      text-align: center;\
+      padding: 30px 10px;\
+      color: #FFD700;\
+      font-size: 0.9rem;\
+    \}\
+\
+    /* Star decoration */\
+    .stars \{\
+      position: fixed;\
+      top: 0;\
+      left: 0;\
+      width: 100%;\
+      height: 100%;\
+      pointer-events: none;\
+      background: transparent;\
+      z-index: 0;\
+    \}\
+\
+    .star \{\
+      position: absolute;\
+      width: 2px;\
+      height: 2px;\
+      background: white;\
+      border-radius: 50%;\
+      animation: twinkle 2s infinite alternate;\
+    \}\
+\
+    @keyframes twinkle \{\
+      from \{ opacity: 0.2; \}\
+      to \{ opacity: 1; \}\
+    \}\
+  </style>\
+</head>\
+<body>\
+\
+  <div class="stars">\
+    <!-- Generate stars -->\
+    <script>\
+      const starsContainer = document.currentScript.parentNode;\
+      for(let i=0;i<100;i++)\{\
+        const star = document.createElement('div');\
+        star.classList.add('star');\
+        star.style.top = Math.random()*100 + '%';\
+        star.style.left = Math.random()*100 + '%';\
+        star.style.width = (Math.random()*3+1) + 'px';\
+        star.style.height = star.style.width;\
+        star.style.animationDuration = (Math.random()*3+1) + 's';\
+        starsContainer.appendChild(star);\
+      \}\
+    </script>\
+  </div>\
+\
+  <header>\
+    <h1>New Year, New Legends</h1>\
+    <p>Discover Taiwan's Nian Monster and New Zealand's Matariki legends!</p>\
+  </header>\
+\
+  <section class="episode">\
+    <h2>Episode 1: Taiwan's Nian Monster Story</h2>\
+    <p>Explore the traditional Nian Monster legend in Taiwan, and learn how it influences modern Lunar New Year customs: the magic of red, sound, and light.</p>\
+    <div class="video-container">\
+      <iframe src="https://www.youtube.com/embed/y7iqehll-UQ" title="Episode 1: Taiwan's Nian Monster Story" allowfullscreen></iframe>\
+    </div>\
+  </section>\
+\
+  <section class="episode">\
+    <h2>Episode 2: The Legend of Matariki</h2>\
+    <p>Learn about the M\uc0\u257 ori New Year in New Zealand, the Matariki star cluster legend, and how it symbolizes new beginnings and a prosperous harvest.</p>\
+    <div class="video-container">\
+      <iframe src="https://www.youtube.com/embed/PQXa7aVFlps" title="Episode 2: The Legend of Matariki" allowfullscreen></iframe>\
+    </div>\
+  </section>\
+\
+  <footer>\
+    &copy; 2025 New Year, New Legends. All Rights Reserved.\
+  </footer>\
+\
+</body>\
+</html>\
+}
